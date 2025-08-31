@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.Pane?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.mmp.mmp_javafx_test1.HelloController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+  </padding>
+
+  <Label fx:id="welcomeText" text="Maze Generator"/>
+  <Button text="Generate New Maze"
+          onAction="#generateNewMaze"/>
+
+  <!--Add a pane to hold a MazeGrid -->
+  <Pane fx:id="mazeContainer" VBox.vgrow="ALWAYS"
+        style="-fx-background-color: lightblue;">
+
+    <!-- Adds a pane that can alwasy expand -->
+
+  </Pane>
+</VBox>
